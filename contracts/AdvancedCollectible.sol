@@ -36,5 +36,7 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
         tokenCounter = tokenCounter + 1;
     }
 
-    function 
+    function setTokenURI(uint256 tokenId, string memory _tokenURI) public {
+        
+    }
 }
