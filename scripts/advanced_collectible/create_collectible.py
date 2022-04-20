@@ -1,5 +1,6 @@
-from brownie import AdvancedCollectible, account
-from scripts.helpful_scripts import fund_with_link, get_account
+from brownie import AdvancedCollectible
+from scripts.helpful_scripts import get_account
+from scripts.advanced_collectible.deploy_and_create import fund_with_link
 from web3 import Web3
 
 def main():

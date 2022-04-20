@@ -10,7 +10,31 @@ LOCAL_BLOCKCHAIN_ENVIRONMENTS = [
 ]
 OPENSEA_URL = "https://testnets.opensea.io/assets/{}/{}"
 contract_to_mock = {"link_token": LinkToken, "vrf_coordinator": VRFCoordinatorMock}
+ANIMAL_MAPPING = {
+    0: "MONKEY",
+    1: "TIGER", 
+    2: "CROCODILE", 
+    3: "DUMBO", 
+    4: "REINDEER", 
+    5: "ELEPHANT", 
+    6: "DONKEY", 
+    7: "BEAR", 
+    8: "CRICKET", 
+    9: "CAT", 
+    10: "UNICORN", 
+    11: "HUSKY", 
+    12: "OCTOPUS", 
+    13: "BABYSEAL",
+    14: "OWL",
+    15: "SEAL", 
+    16: "POLARBEAR",
+    17: "OTTER",
+    18: "PANDA", 
+    19: "PUG"
+}
 
+def get_animal(animal_number):
+    return ANIMAL_MAPPING[animal_number]
 
 def get_account(index=None, id=None):
     if index:
